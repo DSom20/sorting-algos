@@ -1,7 +1,7 @@
 const { bubbleSort, bubbleSort2 } = require('../comparison-n2/bubble');
 // import { bubbleSort, bubbleSort2 } from '../comparison-n2/bubble';
 
-describe('bubbleSort', () => {
+xdescribe('bubbleSort', () => {
   test('returns same array as was inputed (same reference, but potentially mutated)', () => {
     let input = [];
     expect(bubbleSort(input)).toBe(input);
@@ -36,7 +36,7 @@ describe('bubbleSort', () => {
   })
 })
 
-describe('bubbleSort2', () => {
+xdescribe('bubbleSort2', () => {
   test('returns same array as was inputed (same reference, but potentially mutated)', () => {
     let input = [];
     expect(bubbleSort2(input)).toBe(input);

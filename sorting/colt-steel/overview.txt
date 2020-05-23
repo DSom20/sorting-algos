@@ -1,0 +1,14 @@
+Bubble,Selection,Insertion
+
+The quadratic sorts
+
+All worst (and average case) are O(n^2)
+
+For best case (nearly sorted):
+
+  Bubble sort can be O(n) if use optimized version where terminate early if 
+    an iteration doesn't have any swaps
+      (Would want to add new item, (ie have unsorted element) at beginning)
+  Insertion sort can be O(n)
+    (If know list is already sorted, could add item to end and optimize by just
+    running that inner loop subroutine from the last element...)
