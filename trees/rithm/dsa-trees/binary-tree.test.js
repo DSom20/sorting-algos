@@ -65,7 +65,7 @@ describe("maxSum", function() {
     expect(largeTree.maxSum()).toBe(21);
   });
 
-  it("handles negative values", function() {
+  it("handles some negative values", function() {
     let node100 = new BinaryTreeNode(100);
     let node8 = new BinaryTreeNode(8);
     let nodeNeg4 = new BinaryTreeNode(-4);
@@ -75,6 +75,18 @@ describe("maxSum", function() {
     let tree = new BinaryTree(root);
 
     expect(tree.maxSum()).toBe(109);
+  });
+
+  it("handles all negative values", function() {
+    let node100 = new BinaryTreeNode(-100);
+    let node8 = new BinaryTreeNode(-8);
+    let nodeNeg4 = new BinaryTreeNode(-4);
+    let node2 = new BinaryTreeNode(-2, nodeNeg4);
+    let nodeNeg3 = new BinaryTreeNode(-3, node8, node100);
+    let root = new BinaryTreeNode(-10, node2, nodeNeg3);
+    let tree = new BinaryTree(root);
+
+    expect(tree.maxSum()).toBe(-2);
   });
 });
 

@@ -214,6 +214,7 @@ describe("lowestCommonAncestor", function() {
     const right_right = new BinaryTreeNode(8);
     right.right = right_right;
 
+    expect()
     expect(tree.lowestCommonAncestor(left, right)).toBe(root);
     expect(tree.lowestCommonAncestor(leftRight, leftRightLeft)).toBe(leftRight);
     expect(tree.lowestCommonAncestor(leftRightLeft, leftLeft)).toBe(left);

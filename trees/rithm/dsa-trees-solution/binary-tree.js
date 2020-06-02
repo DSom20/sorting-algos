@@ -111,6 +111,7 @@ class BinaryTree {
       if (currentNode.left === nodeToFind || currentNode.right === nodeToFind) {
         data.level = level + 1;
         data.parent = currentNode;
+        // return data;   // I added this- can short-circuit, b/c found what we were looking for
       }
       if (currentNode.left) {
         findLevelAndParent(nodeToFind, currentNode.left, level + 1, data);
